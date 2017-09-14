@@ -9,4 +9,5 @@ function draw() {
   background(20, 180, 210);
   strokeWeight(2); 
   point( width/2, height/2 );
+    ellipse(25, 25, 25, 25);
 }
