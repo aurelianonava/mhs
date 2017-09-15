@@ -1,5 +1,6 @@
 # mhs
 #### Repo for Monterey High School's Visual Arts Programming project using the JavaScript library p5.js.
+[p5.js logo](p5js-logo.png)
 
 We will be starting with a basic p5.js project template containing a canvas with the default width and height dimensions. See https://p5js.org/reference/#/p5/createCanvas for more information. This basic template also contains `background(200)` and `point(width/2, lenght/2)` functions. 
 
