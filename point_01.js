@@ -1,7 +1,7 @@
 // Initial p5.js point project
 
 function setup() {
-    CreateCanvas (480, 120);
+    createCanvas (480, 120);
 
 }
 
