@@ -6,7 +6,7 @@ function setup() {
 }
 
 function draw() {
-  background(200, 100,50);
+  background(20,200,150);
 
   strokeWeight(2); 
   point( width/2, height/2 );
