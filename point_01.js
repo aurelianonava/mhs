@@ -12,5 +12,5 @@ function draw() {
 
   strokeWeight(2); 
   point( x+=1, 10 );
-    ellipse(width/2, height/2, 25, 25);
+  //ellipse(width/2, height/2, 25, 25);
 }
