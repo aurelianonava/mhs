@@ -3,19 +3,12 @@
 
 var x = 10;
 
-function setup() {
-    createCanvas (480, 220);
+var x; //variable x declared
+var y; //variable y declared
+var speed= 5;
 
-}
+x=10; // variable x intialize at 10
+y=60; // variable y intialized at 60
 
-function draw() {
-  background(20,200,150);
 
-  strokeWeight(2); 
-  //first parameter using addition assignment operator
-  point( x+=1, 10 );
-  // if condition using system varialbe "with"
-    if( x > width/2 ) {
-     x = width/2;   
-    }
-}
+
