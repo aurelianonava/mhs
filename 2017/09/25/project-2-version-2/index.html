@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="p5js,JavaScript,programming,project 2,p2,p2v2," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="Project 2 - Version 2Conditional Statements  When the test, what is inside the parentheses, passes–it becomes true–then the statement between the curly braces will run:   if (test)  statements} For ex">
+<meta name="keywords" content="p5js,JavaScript,programming,project 2,p2,p2v2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="project 2 - version 2">
+<meta property="og:url" content="http://yoursite.com/2017/09/25/project-2-version-2/index.html">
+<meta property="og:site_name" content="Train Mind, Code Brain">
+<meta property="og:description" content="Project 2 - Version 2Conditional Statements  When the test, what is inside the parentheses, passes–it becomes true–then the statement between the curly braces will run:   if (test)  statements} For ex">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://yoursite.com/2017/09/25/project-2-version-1/if-01.png">
+<meta property="og:image" content="http://yoursite.com/2017/09/25/project-2-version-1/math-operators.png">
+<meta property="og:image" content="http://yoursite.com/2017/09/25/project-2-version-1/relational-or-conditional-operators.png">
+<meta property="og:updated_time" content="2017-09-26T00:52:18.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="project 2 - version 2">
+<meta name="twitter:description" content="Project 2 - Version 2Conditional Statements  When the test, what is inside the parentheses, passes–it becomes true–then the statement between the curly braces will run:   if (test)  statements} For ex">
+<meta name="twitter:image" content="http://yoursite.com/2017/09/25/project-2-version-1/if-01.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/09/25/project-2-version-2/"/>
+
+
+
+
+
+  <title>project 2 - version 2 | Train Mind, Code Brain</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Train Mind, Code Brain</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/25/project-2-version-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aureliano Nava">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Train Mind, Code Brain">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">project 2 - version 2</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-25T13:54:00-07:00">
+                2017-09-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
+                    <span itemprop="name">p5js</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="Project-2-Version-2"><a href="#Project-2-Version-2" class="headerlink" title="Project 2 - Version 2"></a>Project 2 - Version 2</h2><p><strong>Conditional Statements</strong> </p>
+<p>When the test, what is inside the parentheses, passes–it becomes true–then the statement between the curly braces will run:  </p>
+<p>if (test)<br>  statements<br>}</p>
+<p>For example, in the following code, the point will continue to move along the x axis as long as test inside the <code>if( test )</code> does NOT pass.   </p>
+<pre><code>function draw() {
+strokeWeight(3);
+point(x+=1, 25);
+if (test) {
+  statements
+}
+}
+</code></pre><p>Once the test inside <code>if( test )</code> passes, the <em>statement</em> that is inside the <code>{   }</code> curly braces runs.</p>
+<p>Take a look at this diagram:</p>
+<p><img src="/2017/09/25/project-2-version-1/if-01.png" alt=""></p>
+<p>Again, until the test does NOT pass, according to the diagram, <strong>function draw()</strong> continues to run. </p>
+<p>Let’s setup a test. </p>
+<pre><code>function draw() {
+strokeWeight(3);
+point(x+=1, 25);
+if ( x &gt; 240 ) {
+  x = 0;    }
+}
+</code></pre><p>What will happen here? The point will move along the x axis until it reaches x = 240, which makes that test false ( does not pass: 240 > 240 is NOT true. ), therefore the statement inside the <code>{ }</code> curly braces executes ( runs ) and x is repositioned at x = 0. </p>
+<p>Try it out.</p>
+<p><a href="http://jsbin.com/wadojuh/15" target="_blank" rel="external">See me here</a></p>
+<p>So, again, when the <code>if()</code>test is <strong>false</strong>, the function <code>draw();</code> continues to runs. When the <code>if()</code>test is <strong>true</strong>, the code inside the <code>{ }</code>curly braces runs. The computer determines whether the test is true or false by evaluating the expression inside the parentheses.  </p>
+<p>We have at present an <code>if()</code> condition that loops the point for a reason. It is important for you to understand what makes this effect. Note: Each time x is reset back to 0, the test inside <code>if()</code> continues to be false ( not pass ), therefore the function draw runs over and over again, executing <code>if()</code> over and over again. The test in <code>if()</code> becomes true ( passes ) only for an instance, when it reaches 241, and when it does, it allows the statement inside the  <code>{ }</code> curly braces to run, resenting x to x = 0, which in turn makes the point move again until it reaches 241 again, making the <code>if()</code> test pass again, and again. </p>
+<p><strong>If() rule:</strong></p>
+<blockquote>
+<p>if (condition)<br>block of code to be executed if the condition is true<br>}</p>
+</blockquote>
+<p>The <strong>else</strong> statement:</p>
+<blockquote>
+<p>if (condition)<br>    block of code to be executed if the condition is true<br>} else<br>    block of code to be executed if the condition is false<br>}</p>
+</blockquote>
+<h3 id="More-With-Conditional-Statements"><a href="#More-With-Conditional-Statements" class="headerlink" title="More With Conditional Statements"></a>More With Conditional Statements</h3><p>The next goal will be to move the point from ( 0, 10 ) to the end of canvas along the x axis and make it return to ( 0, 10 ) and continue to loop back and forth. </p>
+<h4 id="New-Tools"><a href="#New-Tools" class="headerlink" title="New Tools"></a>New Tools</h4><p>Take a look at these system variables, <a href="https://p5js.org/reference/#/p5/width" target="_blank" rel="external">width</a> and <a href="https://p5js.org/reference/#/p5/height" target="_blank" rel="external">height</a> on the p5.js documentation. </p>
+<p>How can we put to use these two <strong>system</strong> variables? As the documentation explains, these two system variables store the width and height of canvas created by the two parameters in createCanvas( ). The values you placed in each parameter are stored in width and height. </p>
+<p>What is this doing? How would you read it and explain it? </p>
+<pre><code> if( x == width ) {
+x = 10;
+} 
+</code></pre><p>Keep in mind that a single <code>=</code> in programming represents assignment, not equality. For equality the double <code>==</code> is used.</p>
+<blockquote>
+<p><strong>For example: x = 10 means “Assign ( store or save  ) to variable x the integer 10.” Whereas x == 10 means “Variable x equals integer 10.” </strong></p>
+</blockquote>
+<p>These are the basic math operators you should know:<br><img src="/2017/09/25/project-2-version-1/math-operators.png" alt=""></p>
+<p>And these are the Conditional ( also known as Relational ) operators:<br><img src="/2017/09/25/project-2-version-1/relational-or-conditional-operators.png" alt=""></p>
+<h4 id="Project-2-Version-2-1"><a href="#Project-2-Version-2-1" class="headerlink" title="Project 2, Version 2"></a>Project 2, Version 2</h4><p>Starting where Project 2, Version 1 ends, modify the program and make the point travel to the end of the width of canvas, then have the point reverse course, return to x = 0, and back again to the end of canvas’ width, producing an endless loop. </p>
+<p>Note: your project must use the system variables <code>width.</code></p>
+<p><strong>Project Requirements:</strong><br>Make sure you explain in the html of the <code>index.html</code> page the following:</p>
+<ol>
+<li>function setup();</li>
+<li>function draw();</li>
+<li>variable</li>
+<li>variables created<ol>
+<li>declaration </li>
+<li>initialization</li>
+<li>assignment</li>
+</ol>
+</li>
+<li>addition Assignment</li>
+<li>parameter</li>
+<li>argument</li>
+<li>Coordinate x and y axis</li>
+<li>conditional statement</li>
+<li>if() conditional statement </li>
+</ol>
+<p>I know, it seems like a lot of hard things to explain, but you will get better at explaining concepts like these with practice. Don’t worry if it seems like too much to understand at this point. Practice does make perfect. </p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/p5js/" rel="tag"># p5js</a>
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+            <a href="/tags/programming/" rel="tag"># programming</a>
+          
+            <a href="/tags/project-2/" rel="tag"># project 2</a>
+          
+            <a href="/tags/p2/" rel="tag"># p2</a>
+          
+            <a href="/tags/p2v2/" rel="tag"># p2v2</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/25/project-2-version-1/" rel="next" title="project 2 - version 1">
+                <i class="fa fa-chevron-left"></i> project 2 - version 1
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <p class="site-author-name" itemprop="name">Aureliano Nava</p>
+            <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives/">
+            
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Project-2-Version-2"><span class="nav-number">1.</span> <span class="nav-text">Project 2 - Version 2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#More-With-Conditional-Statements"><span class="nav-number">1.1.</span> <span class="nav-text">More With Conditional Statements</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#New-Tools"><span class="nav-number">1.1.1.</span> <span class="nav-text">New Tools</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Project-2-Version-2-1"><span class="nav-number">1.1.2.</span> <span class="nav-text">Project 2, Version 2</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Aureliano Nava</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.2</div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
