@@ -1,6 +1,6 @@
 // Code goes here
 
-// Project 2, Issue #17
+// Project 2, Issue #16
 
 
 var x = 10;
