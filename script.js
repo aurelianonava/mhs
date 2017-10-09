@@ -29,5 +29,6 @@
         speed = -5;
       }else if(x < 0){
         speed = 5
-       //This 'if' and 'else if' controls the eclipse to go back and forth to create a loop. When the point on the eclipse also reverses when it hits the edges.
       }
+       //This 'if' and 'else if' controls the eclipse to go back and forth to create a loop. When the point on the eclipse also reverses when it hits the edges.
+    }
