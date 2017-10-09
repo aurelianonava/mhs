@@ -3,7 +3,7 @@
     var speed = 5;
     var radius =50;
     var angle = 0;
-    //DIfferent Variables for the project
+      //DIfferent Variables for the project
     
     function setup() {
       createCanvas(480, 120); // Canvas
@@ -29,4 +29,5 @@
         speed = -5;
       }else if(x < 0){
         speed = 5
+       //This 'if' and 'else if' controls the eclipse to go back and forth to create a loop. When the point on the eclipse also reverses when it hits the edges.
       }
