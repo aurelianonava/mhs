@@ -1,4 +1,4 @@
-var x = 0;
+    var x = 0;
     var y = 0;
     var speed = 5;
     var radius =50;
@@ -6,12 +6,12 @@ var x = 0;
     //DIfferent Variables for the project
     
     function setup() {
-      createCanvas(600, 400); // Canvas
+      createCanvas(480, 120); // Canvas
     }
 
     function draw() {
       background(255); //White Background
-      translate(0,200); //Adds the numbers to x and y to make it easier to place things around
+      translate(0,58); //Adds the numbers to x and y to make it easier to place things around
       
       strokeWeight(5); //Next object will have a stroke of 5
       ellipse(x, y, radius*2, radius*2); //The eclipse, it is using a radius to make it easier to know the size to make a point follow it
@@ -30,5 +30,3 @@ var x = 0;
       }else if(x < 0){
         speed = 5
       }
-      //This 'if' and 'else if' controls the eclipse to go back and forth to create a loop. When the point on the eclipse also reverses when it hits the edges.
-    }
