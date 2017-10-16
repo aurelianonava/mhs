@@ -13,15 +13,25 @@ function draw() {
   background(150);
   
   fill(125, 170, 220);
-  rect(0,0,200,200);
+  rect(0,0,200,200); //Mr.Nava rect
+  
   fill(150);
-  rect(200,0,200, 200);
-  rect(400,0,200,200);
-  rect(0,200,200,200);
-  rect(200,200,200,200);
+  rect(200,0,200, 200); //Juan Guzman rect
+  
+  fill(150);
+  rect(400,0,200,200); //John Gonzalez rect
+  
+  fill(255,120,120);
+  rect(0,200,200,200); // Jose Orozco rect
+  
+  fill(150);
+  rect(200,200,200,200); // Angel Gomez rect
+  
+  fill(150);
+  rect(400,200,200,200); //Michael Esparaza rect
   
   fill(200, 25, 235);
-  ellipse(x, y, 25, 25);
+  ellipse(x, y, 25, 25); // Mr.Nava Eclipse
   
   
   // bounce x
