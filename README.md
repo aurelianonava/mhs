@@ -10,6 +10,8 @@ I will take up the first of these rectagles in the area encompassed by (200, 200
 
 .....I'll insert my explation for my object in my 200 x 200 rectagle....
 
+Check out my Gist for this project: [Mr. Nav's Gist](https://gist.github.com/aurelianonava/23b14a98f340ab4a8408b6247e5226e3 "Mr. Nava's Gist")
+
 
 **John Gonazalez:**
 
