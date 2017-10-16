@@ -18,7 +18,7 @@ function draw() {
   fill(150);
   rect(200,0,200, 200); //Juan Guzman rect
   
-  fill(150);
+  fill(300, 200, 60);
   rect(400,0,200,200); //John Gonzalez rect
   
   fill(255,120,120);
