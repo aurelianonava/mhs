@@ -27,7 +27,7 @@ function draw() {
   fill(150);
   rect(200,200,200,200); // Angel Gomez rect
   
-  fill(150);
+  fill(0,51,105);
   rect(400,200,200,200); //Michael Esparaza rect
   
   fill(200, 25, 235);
