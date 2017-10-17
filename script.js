@@ -21,6 +21,7 @@ function draw() {
   
   strokeWeight(1);
   
+  // Rectangles overlapping canvas
   fill(125, 170, 220);
   rect(0,0,200,200); //Mr.Nava rect
   fill(150);
@@ -38,6 +39,7 @@ function draw() {
   ellipse(x, y, 25, 25); // Mr.Nava Eclipse
   
   
+  //START Mr. Nava's Project
   // bounce x
   x = x + xspeed;
 
@@ -51,6 +53,8 @@ function draw() {
   if (y > (height / 2)-12.5 || y < 12.5) {
     yspeed = -yspeed;
   }
+
+  //END Mr. Nava's Project
   
 //START Jose Orozco Project
   strokeWeight(2);
@@ -68,6 +72,28 @@ function draw() {
     JOspeed = 4;
   }
 //END Jose Orozco Project
+
+
+//START Juan Guzman
+
+//END Juan Guzman
+
+
+//START John Gonzalez
+
+//END John Gonzalez
+
+
+//START Angel Gomez
+
+
+//END Angel Gomez
+
+
+//START Michael Esparza
+
+
+// END Michael Esparza
   
   n = "Mr. Nava";
   jdg = "Juan Guzman";
