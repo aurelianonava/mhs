@@ -1,16 +1,24 @@
-// Frist
+// mhs master repository project
 
-//Nava Variables
-var x = 180;
-var y = 180;
+//variable
+var x = 25;
+var y = 25;
 var xspeed = 1;
 var yspeed = 2;
+
+
 //Jose Orozco Variables
 var JOx = 17;
 var JOy = 300;
 var JOspeed = 4;
 var JOradius = 15;
 var JOangle = 0;
+
+ 
+
+//speed should remain constant for all projects
+var xspeed = 1, xspeed2 = 1.2;
+var yspeed = 2, yspeed2 = 2.3;
 
 function setup() {
   createCanvas(600, 400);
@@ -22,41 +30,60 @@ function draw() {
   strokeWeight(1);
   
   // Rectangles overlapping canvas
+  //1. Mr.Nava's rectangle
   fill(125, 170, 220);
-  rect(0,0,200,200); //Mr.Nava rect
+  rect(0,0,200,200); 
+  
+  //2. Juan Guzman rect
   fill(150);
-  rect(200,0,200, 200); //Juan Guzman rect
+  rect(200,0,200, 200); 
+  
+  //3. John Gonzalez rect
   fill(130, 180, 60);
-  rect(400,0,200,200); //John Gonzalez rect
+  rect(400,0,200,200); 
+  
+  //4. Jose Orozco rect
   fill(255,120,120);
-  rect(0,200,200,200); // Jose Orozco rect
-  fill(150);
-  rect(200,200,200,200); // Angel Gomez rect
-  fill(150);
-  rect(400,200,200,200); //Michael Esparaza rect
+  rect(0,200,200,200); 
   
-  fill(200, 25, 235);
-  ellipse(x, y, 25, 25); // Mr.Nava Eclipse
-  
+  //5. Angel Gomez rect
+  fill(150);
+  rect(200,200,200,200); 
+
+  //6. Michael Esparaza rect
+  fill(150);
+  rect(400,200,200,200); 
+
   
   //START Mr. Nava's Project
-  // bounce x
-  x = x + xspeed;
 
-  if (x > (width / 3)-12.5 || x < 12.5) {
-    xspeed = -xspeed;
-  }
-
-  // bounce y
-  y = y + yspeed;
-
-  if (y > (height / 2)-12.5 || y < 12.5) {
-    yspeed = -yspeed;
-  }
-
-  //END Mr. Nava's Project
+  //Nava Variables
+  var nava_x = 15, nava_x2 = 15;
+  var nava_y = 15, nava_y2 = 15;
+  var nava_xspeed = 1;
+  var nava_yspeed = 1;
   
-//START Jose Orozco Project
+  fill(125, 170, 220);
+  ellipse(nava_x, nava_y, 25, 25); // Mr.Nava Eclipse
+  
+
+  nava_x = nava_x + nava_xspeed;
+  nava_y = nava_y + nava_yspeed;
+
+  if (nava_x > (width / 3)-12.5 || nava_x < 12.5) {
+    nava_xspeed = -nava_xspeed;
+  }
+
+  nava_y = nava_y + nava_yspeed;
+
+  if (nava_y > (height / 2)-12.5 || nava_y < 12.5) {
+    nava_yspeed = -nava_yspeed;
+  }
+
+  //End of Mr. Nava
+  
+
+  //START Jose Orozco Project
   strokeWeight(2);
   ellipse(JOx, JOy, JOradius * 2, JOradius * 2);
   fill(255);
@@ -71,7 +98,7 @@ function draw() {
   } else if (JOx < 17) {
     JOspeed = 4;
   }
-//END Jose Orozco Project
+  //END Jose Orozco Project
 
 
 //START Juan Guzman
@@ -95,6 +122,8 @@ function draw() {
 
 // END Michael Esparza
   
+  
+  // text() function 
   n = "Mr. Nava";
   jdg = "Juan Guzman";
   jg = "John Gonzalez";
