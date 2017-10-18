@@ -140,13 +140,20 @@ function draw() {
 
 // END Michael Esparza
 
+
 //START Daniel Ayala
 
 
 // END Daniel Ayala
+
+
+//START Monica Jaimes
+
+
+// END Monica Jaimes
   
   
-  // text() function 
+  // text() function variables
   n = "Mr. Nava";
   jdg = "Juan Guzman";
   jg = "John Gonzalez";
@@ -154,8 +161,9 @@ function draw() {
   ag = "Angel Gomez";
   me = "Michael Esparza";
   da = "Daniel Ayala";
-  ns = "New Student";
-  //
+  mj = "Monica Jaimes";
+  
+  // Text function for names
   fill(50);
   text(n, 10, 10, 70, 80); // Text wraps within text box
   text(jdg, 210, 10, 70, 80);
@@ -164,5 +172,5 @@ function draw() {
   text(ag, 210, 210, 70, 80);
   text(me, 410, 210, 70, 80);
   text(da, 610, 10, 70, 80);
-  text(ns, 610, 210, 70, 80);
+  text(mj, 610, 210, 70, 80);
 }
