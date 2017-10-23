@@ -1,10 +1,17 @@
 // mhs master repository project
 
-
+ // Mr. Nava's variables
   var nava_x = 15;
   var nava_y = 15;
   var nava_xspeed = 1;
   var nava_yspeed = 1.5;
+
+//speed variables ( create your own )
+var xspeed = 1, xspeed2 = 1.2;
+var yspeed = 2, yspeed2 = 2.3;
+
+//END of Mr. Nava's variables
+
 
 //Jose Orozco Variables
   var JOx = 17;
@@ -13,10 +20,15 @@
   var JOradius = 15;
   var JOangle = 0;
 
+//END of Jose Orozco's variables
 
-//speed should remain constant for all projects
-var xspeed = 1, xspeed2 = 1.2;
-var yspeed = 2, yspeed2 = 2.3;
+
+//John Gonzalez'a variables
+
+
+
+//End of Juan Gonzalez's variables
+
 
 
 
@@ -126,6 +138,10 @@ function draw() {
 
 //START John Gonzalez
 
+  fill(255);
+  strokeWeight(1);
+  ellipse(500, 106, 25, 25); 
+  
 //END John Gonzalez
 
 

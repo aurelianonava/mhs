@@ -29,6 +29,7 @@ This is where you'll insert your explation for your object in your rectagle....
 **Angel Gomez:**
 
 
+
 **Juan Guzman:**
 
 
@@ -37,3 +38,4 @@ This is where you'll insert your explation for your object in your rectagle....
 
 
 
+**Monica Jaimes:**
