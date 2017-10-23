@@ -13,13 +13,6 @@
   var JOradius = 15;
   var JOangle = 0;
 
-//var John Gonzalez Variables
-
-  var JGx = 110;
-  var JGy = 100;
-  var JGspeed = 5;
-  var JGradius = 15;
-  var JGangle = 10;
 
 //speed should remain constant for all projects
 var xspeed = 1, xspeed2 = 1.2;
@@ -132,12 +125,11 @@ function draw() {
 
 
 //START John Gonzalez
+
   fill(255);
   strokeWeight(1);
-  ellipse(500, 106, 25, 25);
-  ;
+  ellipse(500, 106, 25, 25); 
   
-
 //END John Gonzalez
 
 
