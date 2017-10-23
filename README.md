@@ -17,7 +17,7 @@ Check out my Gist for this project: [Mr. Nav's Gist](https://gist.github.com/aur
 
 i will insert my explanation of my project soon.n 
 
-This is my [Gist](https://gist.github.com/Outrights/d5630b45f76d889d6c763946b2bfed29.js "Gist") for this project.
+This is my [Gist](https://gist.github.com/Outrights/d5630b45f76d889d6c763946b2bfed29 "Gist") for this project.
 
 
 **Jose Orozco:**
