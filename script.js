@@ -126,6 +126,10 @@ function draw() {
 
 //START John Gonzalez
 
+  fill(255);
+  strokeWeight(1);
+  ellipse(500, 106, 25, 25); 
+  
 //END John Gonzalez
 
 
