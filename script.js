@@ -166,6 +166,9 @@ fill(50);
 
 
 //START Monica Jaimes
+ fill(150);
+  strokeWeight(1);
+  ellipse(700, 250, 25, 25);
 
 
 // END Monica Jaimes
