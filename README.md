@@ -24,6 +24,8 @@ This is where you'll insert your explation for your object in your rectagle....
 
 **Michael Esparza:**
 
+This is where I'll be inserting my project explanantion.
+
 
 
 **Angel Gomez:**

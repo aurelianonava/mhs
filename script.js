@@ -152,7 +152,9 @@ function draw() {
 
 
 //START Michael Esparza
-
+fill(50);
+  strokeWeight(1);
+  ellipse(450, 250, 25, 25); 
 
 // END Michael Esparza
 
