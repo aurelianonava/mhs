@@ -164,7 +164,7 @@ function draw() {
       ellipse (MEx+=4,MEy+=2,25,25,)
       
       if (MEy > 380){
-        MEy = 200;
+        MEy = 225;
       }
 
 // END Michael Esparza
