@@ -166,8 +166,6 @@ function draw() {
       if (MEy > 380){
         MEy = 200;
       }
-    
-    }
 
 // END Michael Esparza
 
