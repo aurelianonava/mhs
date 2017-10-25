@@ -54,7 +54,7 @@ function draw() {
   rect(200,200,200,200); 
 
   //6. Michael Esparaza rect
-  fill(150);
+  fill(0,51,105);
   rect(400,200,200,200);
 
   //7. Daniel Ayala Lopez
@@ -63,7 +63,7 @@ function draw() {
 
   //8. Monica Jaimes
   fill(150);
-  rect(400,200,200,200); 
+  rect(400,400,200,200); 
 
   
   //START Mr. Nava's Project
@@ -108,6 +108,11 @@ function draw() {
 
 //START Juan Guzman
 
+  strokeWeight(20);
+  point(300, random(190));
+  point(250, random(190));
+  point(350, random(190));
+  
 //END Juan Guzman
 
 
@@ -136,7 +141,7 @@ function draw() {
       ellipse (MEx+=4,MEy+=2,25,25,)
       
       if (MEy > 380){
-        MEy = 200;
+        MEy = 225;
       }
 
 // END Michael Esparza
