@@ -9,11 +9,14 @@
 //Jose Orozco Variables
   var JOx = 17;
   var JOy = 300;
-  var JOspeed = 2;
+  var JOspeed = 3;
   var JOspeed2 = 3;
   var JOradius = 15;
   var JOangle = 0;
 
+//Michael Esparza's variables
+   var MEx = 450;
+   var MEy = 195;
 
 //speed should remain constant for all projects
 var xspeed = 1, xspeed2 = 1.2;
@@ -30,13 +33,12 @@ function draw() {
   
   strokeWeight(1);
   
-  // Rectangles overlapping canvas
   //1. Mr.Nava's rectangle
-  // fill(125, 170, 220);
-  // rect(0,0,200,200); 
+  fill(125, 170, 220);
+  rect(0,0,200,200); 
   
   //2. Juan Guzman rect
-  fill(150);
+  fill(255);
   rect(200,0,200, 200); 
   
   //3. John Gonzalez rect
@@ -44,7 +46,7 @@ function draw() {
   rect(400,0,200,200); 
   
   //4. Jose Orozco rect
-  fill(20,255,255);
+  fill(550,50,250);
   rect(0,200,200,200); 
   
   //5. Angel Gomez rect
@@ -66,11 +68,8 @@ function draw() {
   
   //START Mr. Nava's Project
 
-  //Nava Variables
   
-  fill(125, 170, 220);
-  rect(0,0,200,200); 
-  
+  fill(225, 70, 20)
   ellipse(nava_x, nava_y, 25, 25);
   
   nava_x = nava_x + nava_xspeed;
@@ -78,33 +77,32 @@ function draw() {
 
   if (nava_x > (width / 4) - 12.5 || nava_x < 12.5) {
     nava_xspeed = -nava_xspeed;
-    fill(125, 170, 220);
   }
 
   if (nava_y > (height / 2)-12.5 || nava_y < 12.5) {
     nava_yspeed = -nava_yspeed;
-    fill(225, 70, 120);
   }
 
   //End of Mr. Nava
   
 
   //START Jose Orozco Project
-
+  
   strokeWeight(2);
   fill(255)
   ellipse(JOx, JOy, JOradius * 2, JOradius * 2);
-  strokeWeight(10);
+  strokeWeight(8);
   point(JOx + JOradius * sin(JOangle), JOy - JOradius * cos(JOangle));
   
   JOangle = JOangle + JOspeed2 * 0.08;
   JOx = JOx + JOspeed;
   
   if (JOx > 184) {
-    JOspeed = -2;
+    JOspeed = -3;
   } else if (JOx < 17) {
-    JOspeed = 2;
+    JOspeed = 3;
   }
+  
   //END Jose Orozco Project
 
 
@@ -115,6 +113,10 @@ function draw() {
 
 //START John Gonzalez
 
+  fill(255);
+  strokeWeight(1);
+  ellipse(500, 106, 25, 25); 
+  
 //END John Gonzalez
 
 
@@ -126,6 +128,16 @@ function draw() {
 
 //START Michael Esparza
 
+   if (MEx > 500) {
+      MEx = 413;
+      }
+      
+      fill (100,3.1,0)
+      ellipse (MEx+=4,MEy+=2,25,25,)
+      
+      if (MEy > 380){
+        MEy = 200;
+      }
 
 // END Michael Esparza
 
