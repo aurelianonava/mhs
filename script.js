@@ -30,7 +30,10 @@ var yspeed = 2, yspeed2 = 2.3;
 //End of Juan Gonzalez's variables
 
 
-
+//Michael Esparza's variables
+   var MEx = 450;
+   var MEy = 195;
+//End of Michael Esparza's variables
 
 function setup() {
   createCanvas(800, 400);
@@ -63,7 +66,7 @@ function draw() {
   rect(200,200,200,200); 
 
   //6. Michael Esparaza rect
-  fill(150);
+  fill(0,51,105);
   rect(400,200,200,200);
 
   //7. Daniel Alberto Ayala Lopez
@@ -152,9 +155,17 @@ function draw() {
 
 
 //START Michael Esparza
-fill(50);
-  strokeWeight(1);
-  ellipse(450, 250, 25, 25); 
+
+   if (MEx > 500) {
+      MEx = 413;
+      }
+      
+      fill (100,3.1,0)
+      ellipse (MEx+=4,MEy+=2,25,25,)
+      
+      if (MEy > 380){
+        MEy = 200;
+      }
 
 // END Michael Esparza
 
