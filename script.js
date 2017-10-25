@@ -167,7 +167,6 @@ function draw() {
         MEy = 200;
       }
     
-    }
 
 // END Michael Esparza
 
