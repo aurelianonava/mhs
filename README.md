@@ -12,10 +12,14 @@ I will take up the first of these rectagles in the area encompassed by (200, 200
 
 Check out my Gist for this project: [Mr. Nav's Gist](https://gist.github.com/aurelianonava/23b14a98f340ab4a8408b6247e5226e3 "Mr. Nava's Gist")
 
+### Note: [Current State of mhs master as of Wednesday, October 25, 2017](https://bl.ocks.org/aurelianonava/5efeb9d234985be08b0440c99d5d9797)
+
 
 **John Gonazalez:**
 
-This is where you'll insert your explation for your object in your rectagle....
+i will insert my explanation of my project soon.
+
+This is my [Gist](https://gist.github.com/Outrights/d5630b45f76d889d6c763946b2bfed29 "Gist") for this project.
 
 
 **Jose Orozco:**
