@@ -37,7 +37,7 @@ function draw() {
   fill(125, 170, 220);
   rect(0,0,200,200); 
   
-  //2. Juan Guzman rect
+  //2. Monica Jaimes
   fill(255);
   rect(200,0,200, 200); 
   
@@ -61,7 +61,7 @@ function draw() {
   fill(100, 150, 225);
   rect(600,0,200,200);
 
-  //8. Monica Jaimes
+  //8. New Student
   fill(150);
   rect(400,400,200,200); 
 
@@ -106,14 +106,14 @@ function draw() {
   //END Jose Orozco Project
 
 
-//START Juan Guzman
+//START Monica Jaimes
 
   strokeWeight(20);
   point(300, random(190));
   point(250, random(190));
   point(350, random(190));
   
-//END Juan Guzman
+//END Monica Jaimes
 
 
 //START John Gonzalez
@@ -156,30 +156,31 @@ function draw() {
 // END Daniel Ayala
 
 
-//START Monica Jaimes
+//START New Student
+ 
 
 
-// END Monica Jaimes
+// END New Student
   
   
   // text() function variables
   n = "Mr. Nava";
-  jdg = "Juan Guzman";
+  mj = "Monica Jaimes";
   jg = "John Gonzalez";
   jo = "Jose Orozco";
   ag = "Angel Gomez";
   me = "Michael Esparza";
   da = "Daniel Ayala";
-  mj = "Monica Jaimes";
+  ns = "New Student";
   
   // Text function for names
   fill(50);
   text(n, 10, 10, 70, 80); // Text wraps within text box
-  text(jdg, 210, 10, 70, 80);
+  text(mj, 210, 10, 70, 80);
   text(jg, 410, 10, 100, 80);
   text(jo, 10, 210, 100, 80);
   text(ag, 210, 210, 70, 80);
   text(me, 410, 210, 70, 80);
   text(da, 610, 10, 70, 80);
-  text(mj, 610, 210, 70, 80);
+  text(ns, 610, 210, 70, 80);
 }
