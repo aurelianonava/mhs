@@ -58,7 +58,7 @@ function draw() {
   rect(400,200,200,200);
 
   //7. Daniel Ayala Lopez
-  fill(150);
+  fill(100, 150, 225);
   rect(600,0,200,200);
 
   //8. Monica Jaimes
@@ -149,7 +149,9 @@ function draw() {
 
 
 //START Daniel Ayala
-
+  fill(25, 125, 225);
+  strokeWeight(1);
+  ellipse(700, 100, 25, 25);
 
 // END Daniel Ayala
 
