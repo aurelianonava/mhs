@@ -154,13 +154,11 @@ function draw() {
 // END Daniel Ayala
 
 
-//START Monica Jaimes
- fill(150);
-  strokeWeight(1);
-  ellipse(700, 250, 25, 25);
+//START New Student
+ 
 
 
-// END Monica Jaimes
+// END New Student
   
   
   // text() function variables
