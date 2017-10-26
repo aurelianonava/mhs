@@ -37,7 +37,7 @@ function draw() {
   fill(125, 170, 220);
   rect(0,0,200,200); 
   
-  //2. Juan Guzman rect
+  //2. Monica Jaimes
   fill(255);
   rect(200,0,200, 200); 
   
@@ -61,7 +61,7 @@ function draw() {
   fill(150);
   rect(600,0,200,200);
 
-  //8. Monica Jaimes
+  //8. New Student
   fill(150);
   rect(400,400,200,200); 
 
@@ -106,14 +106,14 @@ function draw() {
   //END Jose Orozco Project
 
 
-//START Juan Guzman
+//START Monica Jaimes
 
   strokeWeight(20);
   point(300, random(190));
   point(250, random(190));
   point(350, random(190));
   
-//END Juan Guzman
+//END Monica Jaimes
 
 
 //START John Gonzalez
