@@ -151,7 +151,7 @@ function draw() {
 //START Daniel Ayala
   fill(25, 125, 225);
   strokeWeight(1);
-  ellipse(700, 100, 25, 25);
+  ellipse(danielx+=.1, 100, 25, 25);
 
 // END Daniel Ayala
 
