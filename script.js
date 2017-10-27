@@ -18,6 +18,9 @@
    var MEx = 450;
    var MEy = 195;
 
+   //Daniel Ayala's variables
+   var danielx = 600;
+
 //speed should remain constant for all projects
 var xspeed = 1, xspeed2 = 1.2;
 var yspeed = 2, yspeed2 = 2.3;
