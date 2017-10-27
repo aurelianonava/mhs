@@ -129,7 +129,7 @@ function draw() {
 
 //START John Gonzalez
 
-  fill(255);
+  fill(120, 250, 200);
   strokeWeight(1);
   ellipse(JGx, JGy, 25, 25); 
   
