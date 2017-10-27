@@ -21,6 +21,14 @@
    //Daniel Ayala's variables
    var danielx = 600;
 
+
+
+//John Gonzalez Variables
+   var JGx = 500;
+   var JGy = 187;
+   var JGspeed = 3;
+
+
 //speed should remain constant for all projects
 var xspeed = 1, xspeed2 = 1.2;
 var yspeed = 2, yspeed2 = 2.3;
@@ -123,7 +131,17 @@ function draw() {
 
   fill(255);
   strokeWeight(1);
-  ellipse(500, 106, 25, 25); 
+  ellipse(JGx, JGy, 25, 25); 
+  
+  JGy = JGy - JGspeed;
+  
+  if (JGy > 185) {
+    JGspeed = +3;
+    
+  } else if (JGy < 10) {
+    JGspeed = -3;
+    
+  }
   
 //END John Gonzalez
 
