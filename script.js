@@ -18,6 +18,9 @@
    var MEx = 450;
    var MEy = 195;
 
+   //Daniel Ayala's variables
+   var danielx = 600;
+
 //speed should remain constant for all projects
 var xspeed = 1, xspeed2 = 1.2;
 var yspeed = 2, yspeed2 = 2.3;
@@ -58,7 +61,7 @@ function draw() {
   rect(400,200,200,200);
 
   //7. Daniel Ayala Lopez
-  fill(150);
+  fill(100, 150, 225);
   rect(600,0,200,200);
 
   //8. New Student
@@ -149,7 +152,9 @@ function draw() {
 
 
 //START Daniel Ayala
-
+  fill(25, 125, 225);
+  strokeWeight(1);
+  ellipse(danielx+=.1, 100, 25, 25);
 
 // END Daniel Ayala
 
