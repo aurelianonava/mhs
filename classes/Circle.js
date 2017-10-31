@@ -15,7 +15,7 @@ class Circle {
     P$.ellipse(P$.width/3, P$.height/4, P$.height * 0.25, P$.height * 0.25)
   }
   
-  rect1() {
+  myCircle() {
     P$.ellipseMode(P$.RADIUS);
     // var z = 25, radius = 50, speed = 0.5, y = 50;
    
@@ -34,8 +34,8 @@ class Circle {
   }
 
   
-
   log() {
     console.log(this.logtext);
   }
+
 }

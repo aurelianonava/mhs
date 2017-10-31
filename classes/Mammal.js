@@ -7,7 +7,8 @@ class Mammal {
 	}
 
 	william() {
-		P$.rect(50, 50, 50, 50);
+		P$.rect(150, 50, 50, 50);
+		// P$.arc(50, 55, 60, 60, HALF_PI, PI);
 
 	}
 
