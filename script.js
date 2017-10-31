@@ -1,10 +1,18 @@
 "use strict"
  
 var y =100, radius = 25;
-var x = 100, speed = 1, direction = 1;
+var x = 300, speed = 1, direction = 1, diameter = 25;
 var yradius = 25;
 var s = 5.5;
 // x += speed;
+
+
+var circle = {
+
+    x: 100,
+    y1: 200,
+    diameter: 50
+  };
 
 window.P$ = new p5(p => {
   // var y = 25;
@@ -19,7 +27,7 @@ window.P$ = new p5(p => {
 
     // c = new Circle();
     // e = new Mammal();
-    bug = new Bug();
+    bug = new Bug(x, y, diameter);
     
     
 
