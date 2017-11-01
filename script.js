@@ -4,7 +4,7 @@ var y =100, radius = 25;
 var x = 300, speed = 1, direction = 1, diameter = 25;
 var yradius = 25;
 var s = 5.5;
-// x += speed;
+
 
 
 var circle = {
@@ -15,19 +15,18 @@ var circle = {
   };
 
 window.P$ = new p5(p => {
-  // var y = 25;
+  
   let c
   let e
   let bug
+  let bug2
  
   p.setup = function () {
     
     p.createCanvas(600, 400);
-    // p.ellipseMode(RADIUS);
-
-    // c = new Circle();
-    // e = new Mammal();
+    
     bug = new Bug(x, y, diameter);
+    bug2 = new Bug(x, y, diameter);
     
     
 
@@ -36,23 +35,16 @@ window.P$ = new p5(p => {
 
   p.draw = function () {
 
-  p.background(100, 200, 250);
-  // x += speed;
+    p.background(100, 200, 250);
     
     p.fill(0, 100, 145);
-    // c.draw();
-    // c.draw1();
-    // c.myCircle();
-    // c.draw();
-    // e.william();
-    // new instance of Bug
-    // b.move();
     bug.move();
     bug.display(x, y, speed);
+    bug2.move();
+    bug2.display();
     
 
   }
-
 
 
 }, "script")
