@@ -307,6 +307,72 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/JavaScript-Objects/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript Objects</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/JavaScript-Objects/p5js/" itemprop="url" rel="index">
+                    <span itemprop="name">p5js</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/JavaScript-Objects/p5js/Github/" itemprop="url" rel="index">
+                    <span itemprop="name">Github</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -339,12 +405,86 @@
             <h2 id="Object-Oriented-Programming"><a href="#Object-Oriented-Programming" class="headerlink" title="Object Oriented Programming"></a>Object Oriented Programming</h2><h3 id="Creating-Classes"><a href="#Creating-Classes" class="headerlink" title="Creating Classes"></a>Creating Classes</h3><p>OOP, Object Oriented Programming, is what’s at the heart of all advance code. If you desire to develop into skilled programmer you will need to master OOP.</p>
 <p>This is an introductory programming course so we will not have much time to dedicate to OOP, but we should make the attempt at getting our feet wet, so to speak.</p>
 <p>Take a look at this video. It covers what are called JavaScript data objects:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-e5h4IGKZRY" frameborder="0" gesture="media" allowfullscreen></iframe>
+<p>\<iframe width="560" height="315" src="https://www.youtube.com/embed/-e5h4IGKZRY" frameborder="0" gesture="media" allowfullscreen\="">\</iframe></p>
+<p><strong>We will be studying the following two programs. Take a look at this code:</strong></p>
+<pre><code>var car; // Declare car object as a global variable.
+function setup() {
+  createCanvas(480, 270);
+  // Initialize Car object
+car = {
+c: color(175),
+xpos: width/2,
+ypos: height/2,
+xspeed: 3,
+display: function() { // Function.
+  // The car is just a square
+  rectMode(CENTER);
+  stroke(0);
+  fill(this.c);
+  rect(this.xpos,this.ypos,20,10);
+},
+move: function() { // Function.
+  this.xpos = this.xpos + this.xspeed;
+  if (this.xpos &gt; width) {
+this.xpos = 0;
+  }
+}    
+  };
+}
+function draw() {
+  background(100);
+  // Operate Car object.
+  car.move(); // Operate the car object in draw( ) by calling object methods using the dots syntax.
+  car.display();
+}
+</code></pre><p><strong>Now take a look at this code:</strong></p>
+<pre><code>var car1;
+var car2; // Two objects!
 
+function setup() {
+  createCanvas(480, 400);
+  car1 = new Car(color(127),0,100,2); // Parameters go inside the parentheses when the object is constructed.
+  car2 = new Car(color(175),0,300,1);
+}
 
+function draw() {
+  background(51);
+  car1.move();
+  car1.display();
+  car2.move();
+  car2.display2();
+}
 
+// Even though there are multiple objects, we still only need one constructor function. 
+// No matter how many cookies we make, only one cookie cutter is needed.Isn’t object-oriented programming swell?
+function Car(tempC, tempXpos, tempYpos, tempXspeed) { // The Constructor is defined with arguments.
+  this.c = tempC;
+  this.xpos = tempXpos;
+  this.ypos = tempYpos;
+  this.xspeed = tempXspeed;
 
+  this.display = function() {
+stroke(0);
+fill(this.c);
+rectMode(CENTER);
+rect(this.xpos,this.ypos,20,10);
+  }
 
+  this.display2 = function() {
+stroke(0);
+fill(this.c);
+rectMode(CENTER);
+rect(this.xpos,this.ypos,20,10);
+  }
+
+  this.move = function() {
+this.xpos = this.xpos + this.xspeed;
+if (this.xpos &gt; width) {
+  this.xpos = 0;
+}
+  }
+}
+</code></pre>
           
         
       
@@ -446,8 +586,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
                   </a>
                 </span>
 
@@ -457,8 +597,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
                   </a>
                 </span>
 
@@ -655,8 +795,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
                   </a>
                 </span>
 
@@ -666,8 +806,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
                   </a>
                 </span>
 
@@ -854,8 +994,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
                   </a>
                 </span>
 
@@ -865,8 +1005,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
                   </a>
                 </span>
 
@@ -1017,8 +1157,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
                   </a>
                 </span>
 
@@ -1028,8 +1168,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
                   </a>
                 </span>
 
@@ -1249,8 +1389,8 @@ x = 10;
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
                   </a>
                 </span>
 
@@ -1260,8 +1400,8 @@ x = 10;
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
                   </a>
                 </span>
 
@@ -1473,8 +1613,8 @@ point(x+=1, y);
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
                   </a>
                 </span>
 
@@ -1484,8 +1624,8 @@ point(x+=1, y);
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
                   </a>
                 </span>
 
@@ -1638,8 +1778,8 @@ point(x+=1, y);
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
                   </a>
                 </span>
 
@@ -1649,8 +1789,8 @@ point(x+=1, y);
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
                   </a>
                 </span>
 
@@ -1808,8 +1948,8 @@ point(x+=1, y);
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
                   </a>
                 </span>
 
@@ -1819,8 +1959,8 @@ point(x+=1, y);
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
                   </a>
                 </span>
 
@@ -1974,8 +2114,8 @@ point(x+=1, y);
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
                   </a>
                 </span>
 
@@ -1985,8 +2125,8 @@ point(x+=1, y);
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
                   </a>
                 </span>
 
@@ -2142,7 +2282,7 @@ point(x+=1, y);
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
@@ -2153,7 +2293,7 @@ point(x+=1, y);
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-count">24</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
