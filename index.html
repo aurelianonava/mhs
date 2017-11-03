@@ -265,7 +265,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/03/Extra-Credit-Prjects/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/03/OOP-6-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aureliano Nava">
@@ -284,7 +284,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/11/03/Extra-Credit-Prjects/" itemprop="url">Extra Credit Prjects</a></h1>
+                <a class="post-title-link" href="/2017/11/03/OOP-6-2/" itemprop="url">OOP-6.2</a></h1>
         
 
         <div class="post-meta">
@@ -296,7 +296,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-03T10:20:40-07:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-03T13:00:03-07:00">
                 2017-11-03
               </time>
             
@@ -330,17 +330,6 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
-                    <span itemprop="name">p5js</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/HTML/" itemprop="url" rel="index">
                     <span itemprop="name">HTML</span>
                   </a>
@@ -352,8 +341,41 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/p5js/writing/" itemprop="url" rel="index">
-                    <span itemprop="name">writing</span>
+                  <a href="/categories/JavaScript/JavaScript-Objects/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript Objects</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/JavaScript-Objects/p5js/" itemprop="url" rel="index">
+                    <span itemprop="name">p5js</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/JavaScript-Objects/p5js/Github/" itemprop="url" rel="index">
+                    <span itemprop="name">Github</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/JavaScript-Objects/p5js/Github/OOP/" itemprop="url" rel="index">
+                    <span itemprop="name">OOP</span>
                   </a>
                 </span>
 
@@ -391,15 +413,17 @@
       
         
           
-            <h2 id="Extra-Credit-Projects"><a href="#Extra-Credit-Projects" class="headerlink" title="Extra Credit Projects"></a>Extra Credit Projects</h2><h3 id="2-5-Random"><a href="#2-5-Random" class="headerlink" title="2.5: Random"></a>2.5: Random</h3><p>You will be required to select 2 extras credit projects. The idea is to study the concepts in the code, execute ( run ) the program, and write a project explanation detailing all the key programing concepts involved in the program.  </p>
+            <h2 id="OOP-6-2"><a href="#OOP-6-2" class="headerlink" title="OOP: 6.2"></a>OOP: 6.2</h2><p>Study this code. We’ll be going over it in class. It’s a clear and direct way of creating a Bubble class, and two Bubble objects. </p>
 <blockquote>
-<p>// 2.5: Random</p>
-<p>var spot =<br>  x: 100,<br>  y: 50<br>}</p>
-<p>var col =<br>  r: 255,<br>  g: 0,<br>  b: 0<br>}<br>function setup()<br>  createCanvas(600, 400);<br>  background(150);<br>}</p>
-<p>function draw()<br>  col.r = random(100, 255);<br>  col.g = 0;<br>  col.b = random(100, 190);</p>
-<p>  spot.x = random(0, width);<br>  spot.y = random(0, height);<br>  noStroke();<br>  fill(col.r, col.g, col.b, 100);<br>  ellipse(spot.x, spot.y, 24, 24);<br>}</p>
+<p>let bubble1;<br>let bubble2;</p>
+<p>function setup()<br>  createCanvas(600, 400);<br>  bubble1 = new Bubble();<br>  bubble2 = new Bubble();<br>}</p>
+<p>function draw()<br>  background(0);<br>  bubble1.move();<br>  bubble1.show();<br>  bubble2.move();<br>  bubble2.show();<br>}</p>
+<p>class Bubble<br>  constructor(x, y, r)<br>this.x = 200;<br>this.y = 150;<br>  }</p>
+<p>  move()<br>this.x = this.x + random(-5, 5);<br>this.y = this.y + random(-5, 5);<br>  }</p>
+<p>  show()<br>stroke(255);<br>strokeWeight(4);<br>noFill();<br>ellipse(this.x, this.y, 24, 24);<br>  }<br>}</p>
 </blockquote>
-<h3 id="See-the-video"><a href="#See-the-video" class="headerlink" title="See the video:"></a>See the video:</h3><p>\<iframe width="560" height="315" src="https://www.youtube.com/embed/nfmV2kuQKwA?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA" frameborder="0" gesture="media" allowfullscreen\="">\</iframe></p>
+<p>Take a look at the video explanation provided by professor Daniel Shiffman.<br>This video introduces Object-Oriented Programming in JavaScript with ES6 classes and the p5.js library.</p>
+<p>\<iframe width="560" height="315" src="https://www.youtube.com/embed/T-HGdc8L-7w?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA" frameborder="0" gesture="media" allowfullscreen\="">\</iframe></p>
 
           
         
@@ -548,6 +572,17 @@
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/JavaScript/JavaScript-Objects/p5js/Github/" itemprop="url" rel="index">
                     <span itemprop="name">Github</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/JavaScript-Objects/p5js/Github/OOP/" itemprop="url" rel="index">
+                    <span itemprop="name">OOP</span>
                   </a>
                 </span>
 
@@ -780,8 +815,8 @@ if (this.xpos &gt; width) {
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
-                    <span itemprop="name">p5js</span>
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
                   </a>
                 </span>
 
@@ -791,8 +826,8 @@ if (this.xpos &gt; width) {
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
+                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
+                    <span itemprop="name">p5js</span>
                   </a>
                 </span>
 
@@ -989,8 +1024,8 @@ if (this.xpos &gt; width) {
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
-                    <span itemprop="name">p5js</span>
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
                   </a>
                 </span>
 
@@ -1000,8 +1035,8 @@ if (this.xpos &gt; width) {
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
+                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
+                    <span itemprop="name">p5js</span>
                   </a>
                 </span>
 
@@ -1188,8 +1223,8 @@ if (this.xpos &gt; width) {
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
-                    <span itemprop="name">p5js</span>
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
                   </a>
                 </span>
 
@@ -1199,8 +1234,8 @@ if (this.xpos &gt; width) {
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
+                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
+                    <span itemprop="name">p5js</span>
                   </a>
                 </span>
 
@@ -1351,8 +1386,8 @@ if (this.xpos &gt; width) {
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
-                    <span itemprop="name">p5js</span>
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
                   </a>
                 </span>
 
@@ -1362,8 +1397,8 @@ if (this.xpos &gt; width) {
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
+                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
+                    <span itemprop="name">p5js</span>
                   </a>
                 </span>
 
@@ -1586,8 +1621,8 @@ x = 10;
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
-                    <span itemprop="name">p5js</span>
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
                   </a>
                 </span>
 
@@ -1597,8 +1632,8 @@ x = 10;
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
+                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
+                    <span itemprop="name">p5js</span>
                   </a>
                 </span>
 
@@ -1824,8 +1859,8 @@ point(x+=1, y);
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
-                    <span itemprop="name">p5js</span>
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
                   </a>
                 </span>
 
@@ -1835,8 +1870,8 @@ point(x+=1, y);
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
+                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
+                    <span itemprop="name">p5js</span>
                   </a>
                 </span>
 
@@ -1989,8 +2024,8 @@ point(x+=1, y);
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
-                    <span itemprop="name">p5js</span>
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
                   </a>
                 </span>
 
@@ -2000,8 +2035,8 @@ point(x+=1, y);
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
+                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
+                    <span itemprop="name">p5js</span>
                   </a>
                 </span>
 
@@ -2159,8 +2194,8 @@ point(x+=1, y);
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
-                    <span itemprop="name">p5js</span>
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
                   </a>
                 </span>
 
@@ -2170,8 +2205,8 @@ point(x+=1, y);
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
+                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
+                    <span itemprop="name">p5js</span>
                   </a>
                 </span>
 
