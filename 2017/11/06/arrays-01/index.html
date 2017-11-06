@@ -95,18 +95,18 @@
 
 
 
-<meta name="description" content="ArraysExample #1 ( 7.1 DS )Take a lookout this first array example:  /*   Code below is for https://vimeo.com/channels/learningp5js/141211396 Video reference at 0:20 seconds on Objects &amp;gt; https://vimeo">
+<meta name="description" content="ArraysExample #1 ( 7.1 DS )Take a lookout this first array example: /*   Code below is for https://vimeo.com/channels/learningp5js/141211396 Video reference at 0:20 seconds on Objects &amp;gt; https://vim">
 <meta name="keywords" content="p5.js,JavaScript,programming,arrays">
 <meta property="og:type" content="article">
 <meta property="og:title" content="arrays-01">
 <meta property="og:url" content="http://yoursite.com/2017/11/06/arrays-01/index.html">
 <meta property="og:site_name" content="Train Mind, Code Brain">
-<meta property="og:description" content="ArraysExample #1 ( 7.1 DS )Take a lookout this first array example:  /*   Code below is for https://vimeo.com/channels/learningp5js/141211396 Video reference at 0:20 seconds on Objects &amp;gt; https://vimeo">
+<meta property="og:description" content="ArraysExample #1 ( 7.1 DS )Take a lookout this first array example: /*   Code below is for https://vimeo.com/channels/learningp5js/141211396 Video reference at 0:20 seconds on Objects &amp;gt; https://vim">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-11-06T18:41:42.000Z">
+<meta property="og:updated_time" content="2017-11-06T19:31:47.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="arrays-01">
-<meta name="twitter:description" content="ArraysExample #1 ( 7.1 DS )Take a lookout this first array example:  /*   Code below is for https://vimeo.com/channels/learningp5js/141211396 Video reference at 0:20 seconds on Objects &amp;gt; https://vimeo">
+<meta name="twitter:description" content="ArraysExample #1 ( 7.1 DS )Take a lookout this first array example: /*   Code below is for https://vimeo.com/channels/learningp5js/141211396 Video reference at 0:20 seconds on Objects &amp;gt; https://vim">
 
 
 
@@ -350,6 +350,17 @@
 
                 
                 
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/p5js/arrays/" itemprop="url" rel="index">
+                    <span itemprop="name">arrays</span>
+                  </a>
+                </span>
+
+                
+                
               
             </span>
           
@@ -381,19 +392,50 @@
 
       
         <h2 id="Arrays"><a href="#Arrays" class="headerlink" title="Arrays"></a>Arrays</h2><h3 id="Example-1-7-1-DS"><a href="#Example-1-7-1-DS" class="headerlink" title="Example #1 ( 7.1 DS )"></a>Example #1 ( 7.1 DS )</h3><p>Take a lookout this first array example:</p>
-<blockquote>
-<p>/* </p>
-<ol>
-<li>Code below is for <a href="https://vimeo.com/channels/learningp5js/141211396" target="_blank" rel="external">https://vimeo.com/channels/learningp5js/141211396</a></li>
-<li>Video reference at 0:20 seconds on Objects > <a href="https://vimeo.com/channels/learningp5js/138327558" target="_blank" rel="external">https://vimeo.com/channels/learningp5js/138327558</a></li>
-</ol>
-<p>*/</p>
-<p>var nums = <a href="#">100, 35, 46, 72</a>;<br>var num = 23;</p>
-<p>function setup()<br>  createCanvas(400, 400);<br>}</p>
-<p>function draw()<br>background(0);<br>  ellipse(100, 200, num, num);<br>  ellipse(200, 200, nums<a href="#">2</a>, nums<a href="#">2</a>);</p>
-<p>}</p>
-</blockquote>
+<pre><code>/* 
 
+Code below is for https://vimeo.com/channels/learningp5js/141211396
+Video reference at 0:20 seconds on Objects &gt; https://vimeo.com/channels/learningp5js/138327558
+
+*/
+
+var nums = [100, 35, 46, 72];
+var num = 23;
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+background(0);
+  ellipse(100, 200, num, num);
+  ellipse(200, 200, nums[2], nums[2]);
+
+}
+</code></pre><p><strong>And now let’s examine this program:</strong></p>
+<pre><code>/* *
+Code below is for https://vimeo.com/channels/learningp5js/141211396
+Video reference at 0:20 seconds on Objects &gt; https://vimeo.com/channels/learningp5js/138327558
+This sketch is from 8:00 minute of the video covering words in arrays and the arrays.length function
+*/
+var words = [&quot;rainbow&quot;, &quot;heart&quot;, &quot;purple&quot;, &quot;friendship&quot;, &quot;love&quot;];
+var index = 0;
+function setup() {
+  createCanvas(400, 400);
+}
+function draw() {
+  background(0);
+  fill(255);
+  textSize(32);
+  text(words[index], 12, 200);
+}
+function mousePressed() {
+  index = index + 1;
+  if (index == words.length) {
+index = 0;
+  }
+}
+</code></pre>
       
     </div>
     
@@ -524,7 +566,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
