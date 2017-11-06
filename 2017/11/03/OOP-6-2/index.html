@@ -95,18 +95,18 @@
 
 
 
-<meta name="description" content="OOP: 6.2Study this code. We’ll be going over it in class. It’s a clear and direct way of creating a Bubble class, and two Bubble objects.   let bubble1;let bubble2; function setup()  createCanvas(600,">
+<meta name="description" content="OOP: 6.2Study this code. We’ll be going over it in class. It’s a clear and direct way of creating a Bubble class, and two Bubble objects.  let bubble1; let bubble2;  function setup() {   createCanvas(">
 <meta name="keywords" content="p5.js,JavaScript,programming,Github,JavaScript Objects,OOP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OOP-6.2">
 <meta property="og:url" content="http://yoursite.com/2017/11/03/OOP-6-2/index.html">
 <meta property="og:site_name" content="Train Mind, Code Brain">
-<meta property="og:description" content="OOP: 6.2Study this code. We’ll be going over it in class. It’s a clear and direct way of creating a Bubble class, and two Bubble objects.   let bubble1;let bubble2; function setup()  createCanvas(600,">
+<meta property="og:description" content="OOP: 6.2Study this code. We’ll be going over it in class. It’s a clear and direct way of creating a Bubble class, and two Bubble objects.  let bubble1; let bubble2;  function setup() {   createCanvas(">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-11-03T20:11:33.000Z">
+<meta property="og:updated_time" content="2017-11-06T19:53:18.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OOP-6.2">
-<meta name="twitter:description" content="OOP: 6.2Study this code. We’ll be going over it in class. It’s a clear and direct way of creating a Bubble class, and two Bubble objects.   let bubble1;let bubble2; function setup()  createCanvas(600,">
+<meta name="twitter:description" content="OOP: 6.2Study this code. We’ll be going over it in class. It’s a clear and direct way of creating a Bubble class, and two Bubble objects.  let bubble1; let bubble2;  function setup() {   createCanvas(">
 
 
 
@@ -414,15 +414,42 @@
 
       
         <h2 id="OOP-6-2"><a href="#OOP-6-2" class="headerlink" title="OOP: 6.2"></a>OOP: 6.2</h2><p>Study this code. We’ll be going over it in class. It’s a clear and direct way of creating a Bubble class, and two Bubble objects. </p>
-<blockquote>
-<p>let bubble1;<br>let bubble2;</p>
-<p>function setup()<br>  createCanvas(600, 400);<br>  bubble1 = new Bubble();<br>  bubble2 = new Bubble();<br>}</p>
-<p>function draw()<br>  background(0);<br>  bubble1.move();<br>  bubble1.show();<br>  bubble2.move();<br>  bubble2.show();<br>}</p>
-<p>class Bubble<br>  constructor(x, y, r)<br>this.x = 200;<br>this.y = 150;<br>  }</p>
-<p>  move()<br>this.x = this.x + random(-5, 5);<br>this.y = this.y + random(-5, 5);<br>  }</p>
-<p>  show()<br>stroke(255);<br>strokeWeight(4);<br>noFill();<br>ellipse(this.x, this.y, 24, 24);<br>  }<br>}</p>
-</blockquote>
-<p>Take a look at the video explanation provided by professor Daniel Shiffman.<br>This video introduces Object-Oriented Programming in JavaScript with ES6 classes and the p5.js library.</p>
+<pre><code>let bubble1;
+let bubble2;
+
+function setup() {
+  createCanvas(600, 400);
+  bubble1 = new Bubble();
+  bubble2 = new Bubble();
+}
+
+function draw() {
+  background(0);
+  bubble1.move();
+  bubble1.show();
+  bubble2.move();
+  bubble2.show();
+}
+
+class Bubble {
+  constructor(x, y, r) {
+this.x = 200;
+this.y = 150;
+  }
+
+  move() {
+this.x = this.x + random(-5, 5);
+this.y = this.y + random(-5, 5);
+  }
+
+  show() {
+stroke(255);
+strokeWeight(4);
+noFill();
+ellipse(this.x, this.y, 24, 24);
+  }
+}
+</code></pre><p>Take a look at the video explanation provided by professor Daniel Shiffman.<br>This video introduces Object-Oriented Programming in JavaScript with ES6 classes and the p5.js library.</p>
 <p>\<iframe width="560" height="315" src="https://www.youtube.com/embed/T-HGdc8L-7w?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA" frameborder="0" gesture="media" allowfullscreen\="">\</iframe></p>
 
       
@@ -574,7 +601,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">33</span>
+                <span class="site-state-item-count">32</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
