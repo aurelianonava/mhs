@@ -95,18 +95,18 @@
 
 
 
-<meta name="description" content="ArraysExample #1 ( 7.1 DS )Take a lookout this first array example: /*   Code below is for https://vimeo.com/channels/learningp5js/141211396 Video reference at 0:20 seconds on Objects &amp;gt; https://vim">
+<meta name="description" content="ArraysExample #1 ( 7.1a DS )Take a lookout this first array example: /*  ( 7.1a DS ) Code below is for https://vimeo.com/channels/learningp5js/141211396 Video reference at 0:20 seconds on Objects &amp;gt;">
 <meta name="keywords" content="p5.js,JavaScript,programming,arrays">
 <meta property="og:type" content="article">
 <meta property="og:title" content="arrays-01">
 <meta property="og:url" content="http://yoursite.com/2017/11/06/arrays-01/index.html">
 <meta property="og:site_name" content="Train Mind, Code Brain">
-<meta property="og:description" content="ArraysExample #1 ( 7.1 DS )Take a lookout this first array example: /*   Code below is for https://vimeo.com/channels/learningp5js/141211396 Video reference at 0:20 seconds on Objects &amp;gt; https://vim">
+<meta property="og:description" content="ArraysExample #1 ( 7.1a DS )Take a lookout this first array example: /*  ( 7.1a DS ) Code below is for https://vimeo.com/channels/learningp5js/141211396 Video reference at 0:20 seconds on Objects &amp;gt;">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-11-06T19:31:47.000Z">
+<meta property="og:updated_time" content="2017-11-06T20:21:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="arrays-01">
-<meta name="twitter:description" content="ArraysExample #1 ( 7.1 DS )Take a lookout this first array example: /*   Code below is for https://vimeo.com/channels/learningp5js/141211396 Video reference at 0:20 seconds on Objects &amp;gt; https://vim">
+<meta name="twitter:description" content="ArraysExample #1 ( 7.1a DS )Take a lookout this first array example: /*  ( 7.1a DS ) Code below is for https://vimeo.com/channels/learningp5js/141211396 Video reference at 0:20 seconds on Objects &amp;gt;">
 
 
 
@@ -391,9 +391,9 @@
       
 
       
-        <h2 id="Arrays"><a href="#Arrays" class="headerlink" title="Arrays"></a>Arrays</h2><h3 id="Example-1-7-1-DS"><a href="#Example-1-7-1-DS" class="headerlink" title="Example #1 ( 7.1 DS )"></a>Example #1 ( 7.1 DS )</h3><p>Take a lookout this first array example:</p>
+        <h2 id="Arrays"><a href="#Arrays" class="headerlink" title="Arrays"></a>Arrays</h2><h3 id="Example-1-7-1a-DS"><a href="#Example-1-7-1a-DS" class="headerlink" title="Example #1 ( 7.1a DS )"></a>Example #1 ( 7.1a DS )</h3><p><strong>Take a lookout this first array example:</strong></p>
 <pre><code>/* 
-
+( 7.1a DS )
 Code below is for https://vimeo.com/channels/learningp5js/141211396
 Video reference at 0:20 seconds on Objects &gt; https://vimeo.com/channels/learningp5js/138327558
 
@@ -414,10 +414,12 @@ background(0);
 }
 </code></pre><p><strong>And now let’s examine this program:</strong></p>
 <pre><code>/* *
+( 7.1b DS )
 Code below is for https://vimeo.com/channels/learningp5js/141211396
 Video reference at 0:20 seconds on Objects &gt; https://vimeo.com/channels/learningp5js/138327558
 This sketch is from 8:00 minute of the video covering words in arrays and the arrays.length function
 */
+
 var words = [&quot;rainbow&quot;, &quot;heart&quot;, &quot;purple&quot;, &quot;friendship&quot;, &quot;love&quot;];
 var index = 0;
 function setup() {
@@ -434,6 +436,36 @@ function mousePressed() {
   if (index == words.length) {
 index = 0;
   }
+}
+</code></pre><p><strong>And, also this program:</strong></p>
+<pre><code>/* 
+( 7.2 DS )
+ Arrays and loops:
+Code below is from https://vimeo.com/channels/learningp5js/141211394
+Video Referenced at 1:55 is For Loops, https://vimeo.com/channels/learningp5js/139013336 
+*/
+
+
+
+var nums = [100, 35, 46, 72];
+
+function setup() {
+  createCanvas(500, 400);
+}
+
+function draw() {
+  background(0);
+
+  for (var i = 0; i &lt; 4; i++) {
+stroke(255);
+fill(51);
+ellipse(i * 100 + 100, 200, nums[i], nums[i]);
+  }
+
+  // ellipse(200, 200, nums[1], nums[1]);
+  // ellipse(300, 200, nums[2], nums[2]);
+  // ellipse(400, 200, nums[3], nums[3]);
+
 }
 </code></pre>
       
@@ -612,7 +644,7 @@ index = 0;
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Arrays"><span class="nav-number">1.</span> <span class="nav-text">Arrays</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Example-1-7-1-DS"><span class="nav-number">1.1.</span> <span class="nav-text">Example #1 ( 7.1 DS )</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Arrays"><span class="nav-number">1.</span> <span class="nav-text">Arrays</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Example-1-7-1a-DS"><span class="nav-number">1.1.</span> <span class="nav-text">Example #1 ( 7.1a DS )</span></a></li></ol></li></ol></div>
             
 
           </div>
