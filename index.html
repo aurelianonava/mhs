@@ -471,39 +471,49 @@ ellipse(i * 100 + 100, 200, nums[i], nums[i]);
   // ellipse(400, 200, nums[3], nums[3]);
 
 }
-</code></pre><p><strong>Video:</strong></p>
-<p>\<iframe width="560" height="315" src="https://www.youtube.com/embed/pGkSHeEZLMU" frameborder="0" gesture="media" allowfullscreen\="">\</iframe></p>
-<h3 id="Example-4"><a href="#Example-4" class="headerlink" title="Example #4:"></a>Example #4:</h3><p><strong>And, another array example:</strong></p>
-<pre><code>/* 
-7.2 p5.js Arrays and loops
-Code below is from https://vimeo.com/channels/learningp5js/141211394
-Video Referenced at 1:55 is For Loops, https://vimeo.com/channels/learningp5js/139013336 
-*/
-
-
-
-var nums = [100, 35, 46, 72];
+</code></pre><h3 id="Example-4"><a href="#Example-4" class="headerlink" title="Example #4:"></a>Example #4:</h3><p><strong>array example with Bubble Class:</strong></p>
+<pre><code>let bubbles = [];
 
 function setup() {
-  createCanvas(500, 400);
+  createCanvas(600, 400);
+}
+
+function mouseDragged() {
+  let r = random(10, 50);
+  let b = new Bubble(mouseX, mouseY, r);
+  bubbles.push(b);
 }
 
 function draw() {
   background(0);
+  for (let i = 0; i &lt; bubbles.length; i++) {
+bubbles[i].move();
+bubbles[i].show();
+  }
+}
 
-  for (var i = 0; i &lt; 4; i++) {
-
-stroke(255);
-fill(51);
-ellipse(i * 100 + 100, 200, nums[i], nums[i]);
+class Bubble {
+  constructor(x, y, r) {
+this.x = x;
+this.y = y;
+this.r = r;
   }
 
-  // ellipse(200, 200, nums[1], nums[1]);
-  // ellipse(300, 200, nums[2], nums[2]);
-  // ellipse(400, 200, nums[3], nums[3]);
+  move() {
+this.x = this.x + random(-5, 5);
+this.y = this.y + random(-5, 5);
+  }
 
+  show() {
+stroke(255);
+strokeWeight(4);
+noFill();
+ellipse(this.x, this.y, this.r * 2);
+  }
 }
-</code></pre>
+</code></pre><p><strong>Look at the Video:</strong></p>
+<p>\<iframe width="560" height="315" src="https://www.youtube.com/embed/pGkSHeEZLMU" frameborder="0" gesture="media" allowfullscreen\="">\</iframe></p>
+
           
         
       
