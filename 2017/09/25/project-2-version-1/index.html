@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="JavaScript,programming,project 2,p2,p5js,p2v1,conditional statements,if()," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="Project 2 - Version 1Using External Files To Manage Code Before we start with this project we need to know how to manage our code with external files. When we do this it allows us to manage our code b">
+<meta name="keywords" content="JavaScript,programming,project 2,p2,p5js,p2v1,conditional statements,if()">
+<meta property="og:type" content="article">
+<meta property="og:title" content="project 2 - version 1">
+<meta property="og:url" content="http://yoursite.com/2017/09/25/project-2-version-1/index.html">
+<meta property="og:site_name" content="Train Mind, Code Brain">
+<meta property="og:description" content="Project 2 - Version 1Using External Files To Manage Code Before we start with this project we need to know how to manage our code with external files. When we do this it allows us to manage our code b">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://yoursite.com/2017/09/25/project-2-version-1/point-01.png">
+<meta property="og:image" content="http://yoursite.com/2017/09/25/project-2-version-1/point-01-1.png">
+<meta property="og:image" content="http://yoursite.com/2017/09/25/project-2-version-1/math-assignment-operators.png">
+<meta property="og:image" content="http://yoursite.com/2017/09/25/project-2-version-1/point-01-using-add-assignment.png">
+<meta property="og:image" content="http://yoursite.com/2017/09/25/project-2-version-1/point-01-moving-along-x.png">
+<meta property="og:updated_time" content="2017-11-01T21:55:23.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="project 2 - version 1">
+<meta name="twitter:description" content="Project 2 - Version 1Using External Files To Manage Code Before we start with this project we need to know how to manage our code with external files. When we do this it allows us to manage our code b">
+<meta name="twitter:image" content="http://yoursite.com/2017/09/25/project-2-version-1/point-01.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/09/25/project-2-version-1/"/>
+
+
+
+
+
+  <title>project 2 - version 1 | Train Mind, Code Brain</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Train Mind, Code Brain</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Learning Is The Reward</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/25/project-2-version-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aureliano Nava">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Train Mind, Code Brain">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">project 2 - version 1</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-25T11:28:08-07:00">
+                2017-09-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
+                    <span itemprop="name">p5js</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/p5js/conditional-statements/" itemprop="url" rel="index">
+                    <span itemprop="name">conditional statements</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="Project-2-Version-1"><a href="#Project-2-Version-1" class="headerlink" title="Project 2 - Version 1"></a>Project 2 - Version 1</h2><p><strong>Using External Files To Manage Code</strong></p>
+<p>Before we start with this project we need to know how to manage our code with external files. When we do this it allows us to manage our code better as it grows. </p>
+<p>Pay attention to the different JSbin tabs that you can select and deselect to provided different views. We will be working mostly with the html, JavaScript, and Output tabs.</p>
+<p>Examine the <code>&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;</code> element below: </p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Our Starting Point: Dot&lt;/title&gt;
+  &lt;script data-require=&quot;p5.js@*&quot; data-semver=&quot;0.5.7&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.min.js&quot;&gt;&lt;/script&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
+  &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Our Starting Point: Dot&lt;/h1&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>The code should run the same as when we had the functions <strong>embedded</strong> inside the <strong>index.html</strong> page. From here on we’ll be using external files such as this <strong>script.js</strong> file to manage our <strong>p5.js</strong> code. </p>
+<p>Let’s have some fun with <code>point();</code></p>
+<p>On <strong>script.js</strong>, type the code below to create. </p>
+<pre><code>function setup() {
+createCanvas(480, 120);
+background(200);
+}
+function draw() {
+ strokeWeight(3);
+point(5, 60);
+}
+</code></pre><p><em><strong>Point at x = 5; y = 60.</strong></em><br><img src="/2017/09/25/project-2-version-1/point-01.png" alt=""></p>
+<p>All we have at the moment is a point at (5, 60). Let’s do something cool now. Let’s make our point move along the x axis of canvas. You created a series of points in Project 1, so you know that in order to do this you had to change the values in function <code>point(x,y);</code> for x and y. These variables inside the function parenthesis are called <strong>parameters</strong>. Please remember this.</p>
+<p>Function <code>point(x, y);</code> has two <strong>parameters</strong>, x and y, and <strong>Parameters</strong> receive information as <em>arguments</em>.   When we used <code>point()</code> we used integers instead of a variable x and a variable y. Now we will use variables inside <code>point(x, y)</code> and learn ho two pass on values ( like numbers ) and <em>arguments</em>. To do this, we are going to create some variables.</p>
+<p><em>Declare</em> ( to create ) two variables outside the functions, name them <em>x and y, </em>, and <em>initialize</em> them to x = 10, and y = 60; </p>
+<pre><code>var x;    variable x declared 
+var y;    variable y declared
+x = 10;   // variable x initialized at 10
+y = 60;  // variable y initialized at 60
+
+function setup() {
+  createCanvas(480, 120);
+  background(200); 
+}
+
+function draw() {
+   strokeWeight(3);
+   point(x, y);
+}
+</code></pre><p>Run program and see what you get. Nothing changed from the last run.  Why?<br><img src="/2017/09/25/project-2-version-1/point-01-1.png" alt=""></p>
+<p>We have our point at (10, 60). Notice where <code>point(x, y);</code> is getting the <em>arguments</em> representing x = 10, and y = 60 from? </p>
+<p>We will now learn how to <em>increment</em> the value of x inside <code>point(x, y);</code> with each <em>iteration</em> of the <code>draw();</code> function. Remember that <code>function draw()</code> executes ( runs ) at 60 times per second.</p>
+<p>To increment ( increase gradually ) the x argument inside <code>point(x, y)</code> we will use a special operator called <em>compound operator</em>. </p>
+<p>These are the basic assignment operators we will be using:<br><img src="/2017/09/25/project-2-version-1/math-assignment-operators.png" alt=""></p>
+<p>Let’s put to use the <em>addition assignment</em> operator as follows, inside <code>point(x+=1, y);</code>:</p>
+<pre><code>function draw() {
+strokeWeight(3);
+point(x+=1, y);
+}
+</code></pre><p>And the effects is:<br><em><strong>Incrementing point along x with x+=1</strong></em><br><img src="/2017/09/25/project-2-version-1/point-01-using-add-assignment.png" alt=""> </p>
+<p>Alright, good, but we really don’t want that line drawn all across like it’s drawing it. How do we remove this effect from happening? Think about what is happening and why? What’s the solution?</p>
+<p>After you figure it out, you should have the desired effect.<br><em><strong>Point moving along the x axis of canvas.</strong></em><br><img src="/2017/09/25/project-2-version-1/point-01-moving-along-x.png" alt=""> </p>
+<p>As we can see, the point is moving, and moving, without stopping. It moves even beyond the present width of canvas, which is 480 right now. We will now learn how to make it stop at a designated place in canvas. </p>
+<h3 id="Project-2-Version-1-1"><a href="#Project-2-Version-1-1" class="headerlink" title="Project 2 - Version 1"></a>Project 2 - Version 1</h3><p>Make the point stop at x = 240, which is right at the center of canvas along its x axis.</p>
+<p>Take a look at these videos:</p>
+<p>1.<br>\<iframe width="560" height="315" src="https://www.youtube.com/embed/1Osb_iGDdjk" frameborder="0" gesture="media" allowfullscreen\="">\_</iframe></p>
+<p>2.<br>\<iframe width="560" height="315" src="https://www.youtube.com/embed/LO3Awjn_gyU" frameborder="0" gesture="media" allowfullscreen\="">\</iframe></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+            <a href="/tags/programming/" rel="tag"># programming</a>
+          
+            <a href="/tags/project-2/" rel="tag"># project 2</a>
+          
+            <a href="/tags/p2/" rel="tag"># p2</a>
+          
+            <a href="/tags/p5js/" rel="tag"># p5js</a>
+          
+            <a href="/tags/p2v1/" rel="tag"># p2v1</a>
+          
+            <a href="/tags/conditional-statements/" rel="tag"># conditional statements</a>
+          
+            <a href="/tags/if/" rel="tag"># if()</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/25/project-1-version-6/" rel="next" title="project 1 - version 6">
+                <i class="fa fa-chevron-left"></i> project 1 - version 6
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/25/project-2-version-2/" rel="prev" title="project 2 - version 2">
+                project 2 - version 2 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <p class="site-author-name" itemprop="name">Aureliano Nava</p>
+            <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives/">
+            
+                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">34</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Project-2-Version-1"><span class="nav-number">1.</span> <span class="nav-text">Project 2 - Version 1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Project-2-Version-1-1"><span class="nav-number">1.1.</span> <span class="nav-text">Project 2 - Version 1</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Aureliano Nava</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.2</div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
