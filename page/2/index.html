@@ -173,7 +173,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">Learning Is The Reward</p>
       
   </div>
 
@@ -251,6 +251,244 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/25/project-2-version-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aureliano Nava">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Train Mind, Code Brain">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/25/project-2-version-1/" itemprop="url">project 2 - version 1</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-25T11:28:08-07:00">
+                2017-09-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
+                    <span itemprop="name">p5js</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/p5js/conditional-statements/" itemprop="url" rel="index">
+                    <span itemprop="name">conditional statements</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Project-2-Version-1"><a href="#Project-2-Version-1" class="headerlink" title="Project 2 - Version 1"></a>Project 2 - Version 1</h2><p><strong>Using External Files To Manage Code</strong></p>
+<p>Before we start with this project we need to know how to manage our code with external files. When we do this it allows us to manage our code better as it grows. </p>
+<p>Pay attention to the different JSbin tabs that you can select and deselect to provided different views. We will be working mostly with the html, JavaScript, and Output tabs.</p>
+<p>Examine the <code>&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;</code> element below: </p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Our Starting Point: Dot&lt;/title&gt;
+  &lt;script data-require=&quot;p5.js@*&quot; data-semver=&quot;0.5.7&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.min.js&quot;&gt;&lt;/script&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
+  &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Our Starting Point: Dot&lt;/h1&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>The code should run the same as when we had the functions <strong>embedded</strong> inside the <strong>index.html</strong> page. From here on we’ll be using external files such as this <strong>script.js</strong> file to manage our <strong>p5.js</strong> code. </p>
+<p>Let’s have some fun with <code>point();</code></p>
+<p>On <strong>script.js</strong>, type the code below to create. </p>
+<pre><code>function setup() {
+createCanvas(480, 120);
+background(200);
+}
+function draw() {
+ strokeWeight(3);
+point(5, 60);
+}
+</code></pre><p><em><strong>Point at x = 5; y = 60.</strong></em><br><img src="/2017/09/25/project-2-version-1/point-01.png" alt=""></p>
+<p>All we have at the moment is a point at (5, 60). Let’s do something cool now. Let’s make our point move along the x axis of canvas. You created a series of points in Project 1, so you know that in order to do this you had to change the values in function <code>point(x,y);</code> for x and y. These variables inside the function parenthesis are called <strong>parameters</strong>. Please remember this.</p>
+<p>Function <code>point(x, y);</code> has two <strong>parameters</strong>, x and y, and <strong>Parameters</strong> receive information as <em>arguments</em>.   When we used <code>point()</code> we used integers instead of a variable x and a variable y. Now we will use variables inside <code>point(x, y)</code> and learn ho two pass on values ( like numbers ) and <em>arguments</em>. To do this, we are going to create some variables.</p>
+<p><em>Declare</em> ( to create ) two variables outside the functions, name them <em>x and y, </em>, and <em>initialize</em> them to x = 10, and y = 60; </p>
+<pre><code>var x;    variable x declared 
+var y;    variable y declared
+x = 10;   // variable x initialized at 10
+y = 60;  // variable y initialized at 60
+
+function setup() {
+  createCanvas(480, 120);
+  background(200); 
+}
+
+function draw() {
+   strokeWeight(3);
+   point(x, y);
+}
+</code></pre><p>Run program and see what you get. Nothing changed from the last run.  Why?<br><img src="/2017/09/25/project-2-version-1/point-01-1.png" alt=""></p>
+<p>We have our point at (10, 60). Notice where <code>point(x, y);</code> is getting the <em>arguments</em> representing x = 10, and y = 60 from? </p>
+<p>We will now learn how to <em>increment</em> the value of x inside <code>point(x, y);</code> with each <em>iteration</em> of the <code>draw();</code> function. Remember that <code>function draw()</code> executes ( runs ) at 60 times per second.</p>
+<p>To increment ( increase gradually ) the x argument inside <code>point(x, y)</code> we will use a special operator called <em>compound operator</em>. </p>
+<p>These are the basic assignment operators we will be using:<br><img src="/2017/09/25/project-2-version-1/math-assignment-operators.png" alt=""></p>
+<p>Let’s put to use the <em>addition assignment</em> operator as follows, inside <code>point(x+=1, y);</code>:</p>
+<pre><code>function draw() {
+strokeWeight(3);
+point(x+=1, y);
+}
+</code></pre><p>And the effects is:<br><em><strong>Incrementing point along x with x+=1</strong></em><br><img src="/2017/09/25/project-2-version-1/point-01-using-add-assignment.png" alt=""> </p>
+<p>Alright, good, but we really don’t want that line drawn all across like it’s drawing it. How do we remove this effect from happening? Think about what is happening and why? What’s the solution?</p>
+<p>After you figure it out, you should have the desired effect.<br><em><strong>Point moving along the x axis of canvas.</strong></em><br><img src="/2017/09/25/project-2-version-1/point-01-moving-along-x.png" alt=""> </p>
+<p>As we can see, the point is moving, and moving, without stopping. It moves even beyond the present width of canvas, which is 480 right now. We will now learn how to make it stop at a designated place in canvas. </p>
+<h3 id="Project-2-Version-1-1"><a href="#Project-2-Version-1-1" class="headerlink" title="Project 2 - Version 1"></a>Project 2 - Version 1</h3><p>Make the point stop at x = 240, which is right at the center of canvas along its x axis.</p>
+<p>Take a look at these videos:</p>
+<p>1.<br>\<iframe width="560" height="315" src="https://www.youtube.com/embed/1Osb_iGDdjk" frameborder="0" gesture="media" allowfullscreen\="">\_</iframe></p>
+<p>2.<br>\<iframe width="560" height="315" src="https://www.youtube.com/embed/LO3Awjn_gyU" frameborder="0" gesture="media" allowfullscreen\="">\</iframe></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -1920,171 +2158,6 @@ git commit
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/17/p5js-video-01/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aureliano Nava">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Train Mind, Code Brain">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/17/p5js-video-01/" itemprop="url">p5.js Intro Video</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-17T10:10:17-07:00">
-                2017-09-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/p5js/" itemprop="url" rel="index">
-                    <span itemprop="name">p5js</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Youtube p5.js Introductory Video:</p>
-<div class="video-container"><iframe src="//www.youtube.com/embed/https://youtu.be/D1ELEeIs0j8?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA" frameborder="0" allowfullscreen></iframe></div>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2134,7 +2207,7 @@ git commit
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">22</span>
+                <span class="site-state-item-count">23</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -2145,7 +2218,7 @@ git commit
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
@@ -2156,7 +2229,7 @@ git commit
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">32</span>
+                <span class="site-state-item-count">34</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
@@ -2198,7 +2271,7 @@ git commit
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
